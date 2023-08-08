@@ -63,12 +63,6 @@ def start_task():
 
 
 def stop_task():
-    # global task_thread
-    # if task_thread:
-    #     task_thread.join()  # Wait for the task thread to finish
-    #     print("Task stopped")
-    # else:
-    #     print("Task is not running")
     global stop_flag
     stop_flag.set()
 
@@ -94,8 +88,6 @@ task_thread = None
 window.mainloop()
 
 
-# if __name__ == "__main__":
-#     check_clipboard()  
 
 
 
